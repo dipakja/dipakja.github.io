@@ -1,0 +1,380 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+/* Navbar Styling */
+.navbar-brand {
+    font-family: 'Playfair Display', serif; /* Specify the chosen font family */
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+}
+
+.navbar-toggler-icon {
+    /* Add any specific styling for the toggler icon if needed */
+}
+
+
+
+
+/* Introduction Section Styling */
+.intro-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.intro-text {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.ms-ambassador {
+    font-weight: bold;
+}
+.profile-image {
+    width: 200px; /* Adjust size as needed */
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+/* Animation for the Introduction Section */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+    text-align: center;
+    animation: fadeIn 1s ease-out; /* Adjust duration and timing function as needed */
+}
+
+.intro-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+    text-align: center;
+    opacity: 0; /* Start with 0 opacity */
+    transform: translateY(20px); /* Move the element down initially */
+    animation: fadeIn 1s ease-out forwards; /* Animation forwards to keep the final state */
+}
+
+
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: #3498db; /* You can customize the color */
+    margin: 0 1rem;
+    transition: color 0.3s ease-out;
+}
+
+.social-icon:hover {
+    color: #e74c3c; /* Change color on hover */
+}
+
+
+
+
+
+
+
+/* Skills Section Styling */
+.skills-section {
+    background-color: #fff; /* Adjust background color as needed */
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.section-heading {
+    margin-bottom: 2rem;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    flex-wrap: wrap; /* Allow icons to wrap to the next line if necessary */
+}
+
+.skill-icon {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    margin: 1rem;
+    background-color: #ecf0f1; /* Background color for the icons */
+    border-radius: 40%; /* Make the background circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.skill-icon i {
+    color: inherit; /* Use the original icon color */
+}
+
+.skill-icon:hover {
+    transform: scale(1.2); /* Increase size on hover */
+    background-color: #3498db; /* Change background color on hover */
+}
+
+.skills-section .row {
+    margin-left: -10px; /* Add negative margin to the left */
+    margin-right: -10px; /* Add negative margin to the right */
+}
+
+.skills-section .row [class^="col-"] {
+    padding-left: 10px; /* Adjust padding to offset negative margin */
+    padding-right: 10px; /* Adjust padding to offset negative margin */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Resume Link Styling */
+.resume-link {
+    margin-top: 30px; /* Add space above the resume link if needed */
+}
+
+.resume-link p {
+    font-size: 1.5rem;
+    color: #007BFF; /* Text color */
+}
+
+.resume-link a {
+    color: #0a121b; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resume-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* Professional Journey Section Styling */
+.professional-journey-section {
+    background-color: #f2f2f2; /* Adjust background color as needed */
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.professional-journey-section h2 {
+    margin-bottom: 2rem;
+}
+
+.professional-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #fff; /* Card background color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.professional-card:hover {
+    transform: scale(1.05); /* Increase size on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.card-image img {
+    width: 100px; /* Adjust image size as needed */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-content {
+    flex: 1;
+    margin-left: 2rem; /* Adjust space between image and content */
+    text-align: left;
+}
+
+.card-content h3 {
+    color: #007bff; /* Heading color */
+}
+
+.card-content p {
+    color: #333; /* Text color */
+    margin-bottom: 1rem;
+}
+
+.card-content a {
+    color: #28a745; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
+}
+
+/* Animation for the Professional Cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.professional-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+
+
+/* Project Section Styling */
+.projects-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.project-card {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.project-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-details p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-details a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-details a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Footer Styling */
+.footer-section {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+
+/* scrolling css*/
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff; /* Change the background color as per your design */
+    color: #fff; /* Change the text color as per your design */
+    padding: 10px;
+    border-radius: 20%;
+    display: none;
+    cursor: pointer;
+}
+
+.scroll-to-top-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Show the arrow when scrolling */
+@media (min-width: 768px) {
+    body {
+        padding-bottom: 70px; /* Adjust to your footer height */
+    }
+
+    .scroll-to-top {
+        display: block;
+    }
+}
+
+/* Dark Theme Styles */
+.dark-theme {
+    background-color: #121212; /* Adjust background color for dark theme */
+    color: #ffffff; /* Adjust text color for dark theme */
+}
+
