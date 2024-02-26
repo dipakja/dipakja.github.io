@@ -136,11 +136,11 @@ nav a {
 }
 
 .skill-icon {
-    width: 50px; /* Adjust size as needed */
-    height: 50px;
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
     margin: 1rem;
     background-color: #ecf0f1; /* Background color for the icons */
-    border-radius: 40%; /* Make the background circular */
+    border-radius: 20%; /* Make the background circular */
     display: flex;
     align-items: center;
     justify-content: center;
