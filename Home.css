@@ -64,6 +64,13 @@ nav a {
     border-radius: 50%;
     margin-bottom: 1rem;
 }
+
+.social-icon img {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+}
+
 /* Animation for the Introduction Section */
 @keyframes fadeIn {
     from {
