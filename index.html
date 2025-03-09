@@ -23,6 +23,115 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="DipakJadhav.jpg">
   <link rel="manifest" href="/site.webmanifest">
+<style>
+    
+   
+    .professional-journey-section {
+        padding: 50px 0;
+    }
+    
+    .professional-card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        padding: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .professional-card:hover {
+        transform: scale(1.05);
+    }
+    
+    .professional-card img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+    
+    .card-content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .card-content p {
+        font-size: 0.9rem;
+        color: #666;
+    }
+    
+    .card-content a {
+        display: inline-block;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    .card-content a:hover {
+        text-decoration: underline;
+    }
+    .blogs-section {
+        margin-bottom: 80px; /* Adds space before the next section */
+    }
+    
+    .section-heading {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    
+    .blog-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+    
+    .blog-card {
+        width: 400px;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+        background: #fff;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .blog-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .blog-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .blog-content {
+        padding: 20px;
+    }
+    
+    .blog-content h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .blog-content p {
+        font-size: 16px;
+        color: #555;
+    }
+    
+    .blog-content a {
+        display: inline-block;
+        margin-top: 15px;
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+</style>
 
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="50">
@@ -39,6 +148,12 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#professional-journey">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blogs">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
@@ -59,9 +174,9 @@
      <section id="intro" class="intro-section">
         <div class="container">
             <div class="intro-content">
-                <img src="DipakJadhav.jpg" alt="Your Name" class="profile-image">
-                <p class="intro-text">Hi there, I'm Dipak, a keen developer with a strong interest in advancing in web development. Java is my primary language, and I'm well-versed in the Java full stack.</p>
-                <p class="ms-ambassador">Microsoft Learn Student Ambassador</p>
+                <img src="projectImg/DipakJadhav.jpg" alt="Your Name" class="profile-image">
+                <p class="intro-text">Hi there, I'm Dipak, a developer and cybersecurity student, passionate about both building and securing applications. I'm continuously learning and exploring the best of both worlds.</p>
+
             </div>
         </div>
         <div class="social-icons">
@@ -76,115 +191,120 @@
         </div>
        <!-- My Resume Link -->
        <div class="resume-link ">
-        <p>My Resume : 👉 <a href="https://drive.google.com/file/d/1-o5BsbGqaUmL7GYiDKFt5bFR1tIfoOP5/view?usp=sharing" target="_blank">Resume</a></p>
+        <p>My Resume : 👉 <a href="https://drive.google.com/file/d/1Z-3_oD2Poi3Qj37uw5zaeNz4tn1F_TmE/view?usp=sharing" target="_blank">Resume</a></p>
     </div>
     </section>
 
     
-<!-- Skills Section -->
-<section id="skills" class="skills-section">
-    <div class="container mx-auto">
-        <h2 class="section-heading">Skills</h2>
-        <!-- First Row -->
-        <div class="row">
-            <div class="col-md-3 col-6">
-                <div class="skill-icon" data-skill="Java"><i class="fa fa-java fa-3x" style="color: #007396;"></i></div>
+    <section id="skills" class="skills-section">
+        <div class="container mx-auto">
+            <h2 class="section-heading">Skills</h2>
+    
+            <!-- First Row: Development & Programming -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Development & Programming</h3>
+                    <p>Java, Python, Git, Linux, Spring, API Testing</p>
+                </div>
             </div>
-            <div class="col-md-3 col-6">
-                <div class="skill-icon" data-skill="HTML5"><i class="fa fa-html5 fa-3x" style="color: #E44D26;"></i></div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="skill-icon" data-skill="CSS3"><i class="fa fa-css3 fa-3x" style="color: #1572B6;"></i></div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="skill-icon" data-skill="JavaScript"><i class="fa fa-js fa-3x" style="color: #F0DB4F;"></i></div>
+    
+            <!-- Space between rows -->
+            <div class="mb-3"></div>
+    
+            <!-- Second Row: Cybersecurity -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Cybersecurity</h3>
+                    <p>Burp Suite, Networking, Web Security, Penetration Testing</p>
+                </div>
             </div>
         </div>
-
-        <!-- Space between rows -->
-        <div class="mb-3"></div>
-
-        <!-- Second Row -->
-        <div class="row">
-            <div class="col-md-3 col-6">
-                <div class="skill-icon" data-skill="CSS3"><i class="fa fa-database fa-3x" style="color: #1572B6;"></i></div>
-            </div>
-            <div class="col-md-3 col-6">
-                <div class="skill-icon" data-skill="github"><i class="fab fa-github fa-3x" style="color: #0366d6;"></i></div>
-            </div>
-<!--             <div class="col-md-3 col-6">
-                <div class="skill-icon" data-skill="CSS3"><i class="https://img.icons8.com/color/48/spring-logo.png" style="color: #61dafb;"></i>
-
-                </div>
-            </div> -->
-          <div class="col-md-3 col-6">
-                <div class="skill-icon" data-skill="spring">
-                    <!-- <img src="path-to-your-spring-icon.svg" alt="Spring Framework" style="width: 3rem; height: 3rem;"> -->
-                   <img width="48" height="48" src="https://img.icons8.com/color/48/spring-logo.png" alt="spring-logo"/>
-                </div>
-            </div> 
-            <div class="col-md-3 col-6">
-                <div class="skill-icon" data-skill="AZure">
-                    <!-- <img src="path-to-your-spring-icon.svg" alt="Spring Framework" style="width: 3rem; height: 3rem;"> -->
-                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/azure-1.png" alt="azure-1"/>
-                </div>
-            </div>
-            
-            <!-- Add more icons here -->
-        </div>
-    </div>
-</section>
-
-
+    </section>
+    
 
 <!-- Professional Journey Section -->
 <section id="professional-journey" class="professional-journey-section">
     <div class="container">
-        <h2 class="section-heading">Professional Journey</h2>
+        <h2 class="section-heading text-center">Professional Journey</h2>
 
-        <!-- Azure Fundamentals certificate -->
-        <div class="professional-card">
-            <div class="card-image">
-                <img src="AZ-900.jpg" alt="Azure Certificate" style="width: 150px;height: 150px;">
+        <div class="row">
+            <!-- AZ-900 Certificate -->
+            <div class="col-md-4">
+                <div class="professional-card">
+                    <img src="projectImg/AZ-900.jpg" alt="Azure Certificate">
+                    <div class="card-content">
+                        <h3>AZ-900 Fundamentals</h3>
+                        <p>Earned Microsoft Azure Fundamentals certification, covering cloud concepts and core Azure services.</p>
+                        <a href="https://learn.microsoft.com/en-us/users/dipakjadhav-9781/credentials/daf854a46dd2dbde" target="_blank">View Certificate</a>
+                    </div>
+                </div>
             </div>
-            <div class="card-content">
-                <h3>AZ-900 Fundamentals Certificate</h3>
-                <p>I successfully passed the Azure AZ-900 exam, which provided me with a comprehensive understanding of cloud concepts, Azure services, and core Azure solutions. This certification validates my foundational knowledge in Microsoft Azure, demonstrating my ability to leverage cloud technologies effectively.</p>
 
-                <a href="https://learn.microsoft.com/en-us/users/dipakjadhav-9781/credentials/daf854a46dd2dbde" target="_blank">View My AZ-900 Certificate</a>
+            <!-- PreSecurity Certificate -->
+            <div class="col-md-4">
+                <div class="professional-card">
+                    <img src="projectImg/PresecuirtyImg.png" alt="PreSecurity Certificate">
+                    <div class="card-content">
+                        <h3>PreSecurity Certificate</h3>
+                        <p>Completed TryHackMe PreSecurity path, gaining knowledge in cybersecurity and networking.</p>
+                        <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-YUICO4MTAM.pdf" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MLSA Badge -->
+            <div class="col-md-4">
+                <div class="professional-card">
+                    <img src="projectImg/mlsa_beta.png" alt="Microsoft Learn Student Ambassador">
+                    <div class="card-content">
+                        <h3>Microsoft Learn Student Ambassador</h3>
+                        <p>Part of the MLSA program, engaging in community events and technical learning.</p>
+                        <a href="https://mvp.microsoft.com/en-US/studentambassadors/profile/13a0f4c3-58a1-4054-852c-491725a9f861" target="_blank">View Profile</a>
+                    </div>
+                </div>
             </div>
         </div>
 
-       
-        <!-- Microsoft Learn Student Ambassador -->
-        <div class="professional-card">
-            <div class="card-image">
-                <img src="mlsa_beta.png" alt="Microsoft Learn Student Ambassador" style="width: 100px;height: 100px;">
-            </div>
-            <div class="card-content">
-                <h3>Microsoft Learn Student Ambassador</h3>
-                <p>I joined as a Microsoft Learn Student Ambassador in September. Being part of this community has been an incredible journey, where I've learned and developed my skills in event organization, management, and networking. I've connected with amazing people in the community.</p>
-                <a href="https://mvp.microsoft.com/en-US/studentambassadors/profile/13a0f4c3-58a1-4054-852c-491725a9f861" target="_blank">View My MLSA Profile</a>
-            </div>
-        </div>
-
-        <!-- Open Source Contributor -->
-        <div class="professional-card">
-            <div class="card-image">
-                <img src="hacktoberfest.svg" alt="Open Source Contributor">
-            </div>
-            <div class="card-content">
-                <h3>Open Source Contributor</h3>
-                <p>I actively contribute to open source projects. During Hacktoberfest, I successfully completed and merged 4 pull requests, earning recognition for my contributions. Additionally, I participated in GirlScript Summer of Code, furthering my commitment to open source development.</p>
-           
-
-                <a href="https://tree-nation.com/profile/dipak-jadhav" target="_blank">Tree planation reward</a>
-
+        <div class="row">
+            <!-- Open Source Contributor -->
+            <div class="col-md-4">
+                <div class="professional-card">
+                    <img src="projectImg/hacktoberfest.svg" alt="Open Source Contributor">
+                    <div class="card-content">
+                        <h3>Open Source Contributor</h3>
+                        <p>Actively contributed to open-source projects, including Hacktoberfest and GSSoC.</p>
+                        <a href="https://tree-nation.com/profile/dipak-jadhav" target="_blank">View Reward</a>
+                    </div>
+                </div>
             </div>
         </div>
 
     </div>
 </section>
+
+
+<!-- Blogs Section -->
+<section id="blogs" class="blogs-section">
+    <div class="container">
+        <h2 class="section-heading">Blogs</h2>
+        <div class="blog-container">
+            
+            <!-- Blog 1: Clickjacking -->
+            <div class="blog-card">
+                <img src="projectImg/clickjacking.jpg" alt="Clickjacking Blog">
+                <div class="blog-content">
+                    <h3>Clickjacking Vulnerability: The First Step</h3>
+                    <p>Understand how attackers use clickjacking to trick users and learn how to prevent it.</p>
+                    <a href="https://open.substack.com/pub/dipakjadhav/p/clickjacking-vulnerability-the-first?utm_campaign=post&utm_medium=web" target="_blank">Read More</a>
+                </div>
+            </div>
+
+            <!-- Future blogs can be added here in the same format -->
+        
+        </div>
+    </div>
+</section>
+
 
 
 
@@ -192,89 +312,64 @@
     <div class="container">
         <h2 class="section-heading">Projects</h2>
 
-        <!-- Row 1 -->
-         <div class="row">
+        <!-- Project Cards Row -->
+        <div class="row">
             <!-- Project Card 1 -->
-                <div class="col-md-6">
+            <div class="col-md-6 mb-4">
                 <div class="project-card">
-                    <img src="Weather_ProjectImg.png" alt="Project 1 Screenshot">
+                    <img src="projectImg/Weather_ProjectImg.png" alt="Project 1 Screenshot">
                     <div class="project-details">
                         <h3>Weather Monitoring Website</h3>
-                       <p>A Weather Monitoring System built with Java Spring Boot and MySQL.<br>
-                     It retrieves and displays real-time weather data, with interactive charts for temperature,
-                          humidity, and wind trends.</p>
+                        <p>A Weather Monitoring System built with Java Spring Boot and MySQL.<br>
+                            It retrieves and displays real-time weather data, with interactive charts for temperature,
+                            humidity, and wind trends.</p>
                         <a href="https://github.com/dipakja/WeatherWebApplicatioin" target="_blank">View Code on GitHub</a>
                     </div>
                 </div>
             </div>
 
             <!-- Project Card 2 -->
-     
-         <div class="col-md-6">
+            <div class="col-md-6 mb-4">
                 <div class="project-card">
                     <img src="projectImg/E-Notice.png" alt="Project 2 Screenshot">
-                    <div class="project-details"> 
+                    <div class="project-details">
                         <h3>E-Notice Board</h3>
-                  <p>This advanced Java project showcases my skills in JSP, JDBC, Servlets, and MySQL. The E-Notice Board application includes user authentication and blog post creation, all within a modern, responsive Bootstrap design. Users can register, post, and access notices and updates easily.</p>
-
+                        <p>This advanced Java project showcases my skills in JSP, JDBC, Servlets, and MySQL. 
+                            The E-Notice Board application includes user authentication and blog post creation, 
+                            all within a modern, responsive Bootstrap design.</p>
                         <a href="https://github.com/dipakja/CampusConnect-Portal" target="_blank">View Code on GitHub</a>
                     </div>
                 </div>
             </div>
-      
-      
-        </div>
-          
-        <!-- Row 2 -->
-        <div class="row">
-            <!-- Project Card 3 -->
-                <div class="col-md-6">
-                <div class="project-card">
-                    <img src="projectImg/ProgrammingContest.png" alt="Project 1 Screenshot">
-                    <div class="project-details">
-                        <h3>Programming Contest</h3>
-                        <p>This is my first JavaScript project where I built a website using HTML, CSS, and JavaScript. It provides information about ongoing coding contests using a public API.</p>
-                        <a href="https://github.com/dipakja/programming-contest-website" target="_blank">View Code on GitHub</a>
-                    </div>
-                </div>
-            </div>
 
-          
-       <!-- Project Card 4 -->
-     
-         <div class="col-md-6">
+            <!-- Project Card 3 -->
+            <div class="col-md-6 mb-4">
                 <div class="project-card">
-                    <img src="PortfolioScreenshot.png" alt="Project 4 Screenshot">
-                    <div class="project-details"> 
+                    <img src="projectImg/PortfolioScreenshot.png" alt="Project 3 Screenshot">
+                    <div class="project-details">
                         <h3>Portfolio Website</h3>
-                        <p>A Portfolio Website where I utilized HTML, CSS, Bootstrap css and  js. It is deployed on the github pages</p>
+                        <p>A Portfolio Website where I utilized HTML, CSS, Bootstrap, and JavaScript. 
+                            It is deployed on GitHub Pages.</p>
                         <a href="https://github.com/dipakja/dipakja.github.io" target="_blank">View Code on GitHub</a>
                     </div>
                 </div>
             </div>
-        <!-- Project Card 5 -->
-     
-         <div class="col-md-6">
+
+            <!-- Project Card 4 -->
+            <div class="col-md-6 mb-4">
                 <div class="project-card">
-                    <img src="BookStore.png" alt="Project 5 Screenshot">
-                    <div class="project-details"> 
+                    <img src="projectImg/BookStore.png" alt="Project 4 Screenshot">
+                    <div class="project-details">
                         <h3>Book Store</h3>
-                        <p> A web application built with Java Spring Boot and Thymeleaf for browsing and managing books. 
-                            Users can explore available books, manage their collection, and add new books. 
-                            The app features a clean, responsive design using Bootstrap and is backed by a MySQL database.</p>
+                        <p>A web application built with Java Spring Boot and Thymeleaf for browsing and managing books. 
+                            Users can explore available books, manage their collection, and add new books.</p>
                         <a href="https://github.com/dipakja/BookStore" target="_blank">View Code on GitHub</a>
                     </div>
                 </div>
             </div>
-
-            
         </div>
-
-      
+    </div>
 </section>
-
-
-<!-- Project Section -->
 
 <!-- Contact Section -->
 <section id="contact" class="contact-section">
