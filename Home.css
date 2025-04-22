@@ -11,6 +11,10 @@ nav {
     padding: 1rem;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 nav a {
     color: white;
     text-decoration: none;
@@ -127,10 +131,16 @@ nav a {
 
 /* Skills Section Styling */
 .skills-section {
-    background-color: #fff; /* Adjust background color as needed */
+    background-color: #f9f9f9; /* Adjust background color as needed */
     padding: 4rem 0;
     text-align: center;
 }
+
+  
+  .professional-journey-section {
+    background-color: #ffffff;
+  }
+  
 
 .section-heading {
     margin-bottom: 2rem;
